@@ -36,6 +36,7 @@ FOREIGN KEY(NOM_COL)
 A ajouter a la fin de la creation de table :
 
 ``
+
 CREATE TABLE NOM_DE_LA_TABLE_1 (
   NOM_COL_1 TYPE_COL_1, 
   NOM_COL_2 TYPE_COL_2,
@@ -52,10 +53,7 @@ CREATE TABLE NOM_DE_LA_TABLE_2 (
 ``
 
 ## Domaine
-Il existe different domaine pour les colonnes (int, char, ...). Suivre ce lien pour plus d'information : 
-``
-https://www.w3schools.com/sql/sql_datatypes.asp
-``
+Il existe different domaine pour les colonnes (int, char, ...). Suivre ce lien pour plus d'information : [ICI] (https://www.w3schools.com/sql/sql_datatypes.asp) - Domaine possible SQL
 
 ### Attention
 * Ne pas mettre de ',' a la derniere colonne creer.
