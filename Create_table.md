@@ -21,7 +21,7 @@ A ajouter apres la creation de colonne :
 
 ``
 CREATE TABLE NOM_DE_LA_TABLE (
-NOM_COL_1 TYPE_COL_1 NOT NULL
+  NOM_COL_1 TYPE_COL_1 NOT NULL
 )
 ``
 
@@ -37,23 +37,25 @@ A ajouter a la fin de la creation de table :
 
 ``
 CREATE TABLE NOM_DE_LA_TABLE_1 (
-NOM_COL_1 TYPE_COL_1, 
-NOM_COL_2 TYPE_COL_2,
-... ,
-NOM_COL_X TYPE_COL_X,
-PRIMARY_KEY(NOM_COL_1),
-FOREIGN KEY(NOM_COL_2) REFERENCE NOM_DE_LA_TABLE_2(NOM_COL_1)
+  NOM_COL_1 TYPE_COL_1, 
+  NOM_COL_2 TYPE_COL_2,
+  ... ,
+  NOM_COL_X TYPE_COL_X,
+  PRIMARY_KEY(NOM_COL_1),
+  FOREIGN KEY(NOM_COL_2) REFERENCE NOM_DE_LA_TABLE_2(NOM_COL_1)
 )
 
 CREATE TABLE NOM_DE_LA_TABLE_2 (
-NOM_COL_1 TYPE_COL_1
+  NOM_COL_1 TYPE_COL_1
 )
 
 ``
 
 ## Domaine
 Il existe different domaine pour les colonnes (int, char, ...). Suivre ce lien pour plus d'information : 
+``
 https://www.w3schools.com/sql/sql_datatypes.asp
+``
 
 ### Attention
 * Ne pas mettre de ',' a la derniere colonne creer.
